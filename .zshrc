@@ -44,7 +44,7 @@ export UPDATE_ZSH_DAYS=7
 DISABLE_LS_COLORS="false"
 
 # Set to disable autosetting terminal title.
-DISABLE_AUTO_TITLE="false"
+DISABLE_AUTO_TITLE="true"
 
 # Set if you want red dots to be displayed while waiting for completion.
 COMPLETION_WAITING_DOTS="true"
