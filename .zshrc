@@ -4,8 +4,8 @@ source ~/.dotfiles/zsh/aliases
 
 
 ##### PATHS
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# Enable RVM (https://rvm.io/).
+PATH=$PATH:$HOME/.rvm/bin
 
 
 ##### OH-MY-ZSH
