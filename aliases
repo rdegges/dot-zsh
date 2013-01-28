@@ -33,3 +33,6 @@ alias ps="ps aux"
 
 # Quick file zipping.
 alias gz="tar -zcvf"
+
+# Python stuff.
+alias python="bpython"
