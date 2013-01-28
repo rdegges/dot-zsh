@@ -40,3 +40,8 @@ plugins=(command-not-found git)
 
 # Active oh-my-zsh.
 source $ZSH/oh-my-zsh.sh
+
+
+##### BEHAVIOR
+# Use bash style incremental search.
+bindkey "^R" history-incremental-search-backward
