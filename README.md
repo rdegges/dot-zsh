@@ -1,4 +1,4 @@
-# zsh
+# .zsh
 
 My ZSH dotfiles.
 
