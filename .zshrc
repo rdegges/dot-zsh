@@ -61,3 +61,6 @@ source $ZSH/oh-my-zsh.sh
 ##### BEHAVIOR
 # Use bash style incremental search.
 bindkey "^R" history-incremental-search-backward
+
+# Don't use auto correct stuff. I find that annoying.
+unsetopt correct_all
