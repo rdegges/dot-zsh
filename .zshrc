@@ -13,14 +13,6 @@ PATH=$PATH:$HOME/.rvm/bin
 export EDITOR=vim
 
 
-##### TOOLS
-# Enable autoenv (https://github.com/kennethreitz/autoenv).
-[[ -s "/usr/local/bin/activate.sh" ]] && source "/usr/local/bin/activate.sh"
-
-# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
-[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
-
-
 ##### OH-MY-ZSH
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -64,3 +56,11 @@ bindkey "^R" history-incremental-search-backward
 
 # Don't use auto correct stuff. I find that annoying.
 unsetopt correct_all
+
+
+##### TOOLS
+# Enable autoenv (https://github.com/kennethreitz/autoenv).
+[[ -s "/usr/local/bin/activate.sh" ]] && source "/usr/local/bin/activate.sh"
+
+# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
