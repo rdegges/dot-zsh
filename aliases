@@ -34,3 +34,6 @@ alias ps="ps aux"
 
 # Quick file zipping.
 alias gz="tar -zcvf"
+
+# AWS SSH helpers.
+alias assh="ssh -i ~/.aws/rdegges.pem ubuntu@"
