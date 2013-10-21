@@ -11,6 +11,7 @@ alias df="df -h"
 alias ll="ls -alGh --color=auto"
 alias ls="ls -Gh --color=auto"
 alias du="du -sh"
+alias df="df -h"
 
 # Listing files.
 alias lsg="ll | grep"
