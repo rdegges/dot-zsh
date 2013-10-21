@@ -1,19 +1,20 @@
-# .zsh
+# dot-zsh
 
 My ZSH dotfiles.
 
-
-## Why ZSH?
-
-ZSH is a great shell. Coming from bash, it provides you with the same basic
-functionality, as well as lots of additional goodies:
-
-- Better tab completion.
-- History that is shared across all terminal sessions.
-- Lots of great third party apps.
+These are personalized for my own usage, but you can use them however you'd
+like.
 
 
-## Install
+## Installation
 
-To install these dotfiles, you can run the commands below. As with all my
-dotfiles, I'll assume you're installing them into your `~/.dotfiles` directory.
+The below commands will download the project, and setup ZSH.
+
+**NOTE**: These instructions assume you already have `zsh` and
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) installed on your
+operating system.
+
+``` bash
+$ git clone git@github.com:rdegges/dot-zsh.git ~/.zsh
+$ ln -s ~/.zsh/zshrc ~/.zshrc
+```
