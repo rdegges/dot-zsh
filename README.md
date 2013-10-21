@@ -10,9 +10,13 @@ like.
 
 The below commands will download the project, and setup ZSH.
 
-**NOTE**: These instructions assume you already have `zsh` and
-[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) installed on your
-operating system.
+**NOTE**: These instructions assume you already have:
+
+- `zsh`
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [rvm](http://rvm.io/)
+
+installed on your operating system.
 
 ``` bash
 $ git clone git@github.com:rdegges/dot-zsh.git ~/.zsh
