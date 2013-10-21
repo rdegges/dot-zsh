@@ -1,6 +1,6 @@
 ##### ALIASES
-source ~/.dotfiles/zsh/global_aliases
-source ~/.dotfiles/zsh/aliases
+source ~/.zsh/global_aliases
+source ~/.zsh/aliases
 
 
 ##### PATHS
