@@ -64,3 +64,6 @@ unsetopt correct_all
 
 # Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+
+# Enable RVM.
+[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
