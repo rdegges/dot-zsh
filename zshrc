@@ -8,7 +8,7 @@ source ~/.zsh/aliases
 export EDITOR=vim
 
 # Enable Go (http://golang.org/).
-export GOROOT=$HOME/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 
 
