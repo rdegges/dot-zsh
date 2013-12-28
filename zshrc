@@ -3,14 +3,18 @@ source ~/.zsh/global_aliases
 source ~/.zsh/aliases
 
 
-##### PATHS
-# Enable RVM (https://rvm.io/).
-PATH=$PATH:$HOME/.rvm/bin
-
-
 ##### EXPORTS
 # Use vim as the default text editor.
 export EDITOR=vim
+
+# Enable Go (http://golang.org/).
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+
+
+##### PATHS
+# Enable RVM (https://rvm.io/).
+PATH=$PATH:$HOME/.rvm/bin
 
 
 ##### OH-MY-ZSH
