@@ -48,7 +48,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (Plugins can be found in
 # ~/.oh-my-zsh/plugins/.) Custom plugins may be added to
 # ~/.oh-my-zsh/custom/plugins/
-plugins=(command-not-found git)
+plugins=(command-not-found git git-flow)
 
 # Active oh-my-zsh.
 source $ZSH/oh-my-zsh.sh
