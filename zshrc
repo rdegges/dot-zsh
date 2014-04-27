@@ -9,7 +9,7 @@ export EDITOR=vim
 
 # Enable Go (http://golang.org/).
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 
 ##### PATHS
