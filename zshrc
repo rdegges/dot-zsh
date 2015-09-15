@@ -75,3 +75,6 @@ unsetopt correct_all
 # Enable NVM.
 export NVM_DIR="/Users/rdegges/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Enable pyenv.
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
