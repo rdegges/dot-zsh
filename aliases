@@ -37,3 +37,9 @@ alias gz="tar -zcvf"
 
 # AWS SSH helpers.
 alias assh="ssh -i ~/.aws/rdegges.pem ubuntu@"
+
+# Python helpers.
+alias pt="python setup.py test"
+
+# Node helpers.
+alias nt="npm test"
