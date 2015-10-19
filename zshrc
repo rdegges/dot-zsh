@@ -67,9 +67,6 @@ unsetopt correct_all
 # Enable autoenv (https://github.com/kennethreitz/autoenv).
 [[ -s "/usr/local/opt/autoenv/activate.sh" ]] && source "/usr/local/opt/autoenv/activate.sh"
 
-# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
-[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
-
 # Enable RVM.
 [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
 
@@ -79,3 +76,6 @@ export NVM_DIR="/Users/rdegges/.nvm"
 
 # Enable pyenv.
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
+pyenv virtualenvwrapper
