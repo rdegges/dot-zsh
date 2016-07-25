@@ -71,7 +71,7 @@ unsetopt correct_all
 [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
 
 # Enable NVM.
-export NVM_DIR="/Users/rdegges/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Enable pyenv.
