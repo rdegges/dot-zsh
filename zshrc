@@ -74,8 +74,19 @@ unsetopt correct_all
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# Enable pyenv.
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# This will look for a local `.nvmrc` file in each directory, and will
+# automatically switch to using that version of node if requested.
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
 # Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
 pyenv virtualenvwrapper
