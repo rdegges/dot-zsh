@@ -88,5 +88,7 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
-# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
-pyenv virtualenvwrapper
+# Enable pyenv.
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
