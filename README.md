@@ -16,7 +16,7 @@ The below commands will download the project, and setup ZSH.
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [rvm](http://rvm.io/)
 - [autoenv](https://github.com/kennethreitz/autoenv)
-- [virtualenvwrapper](https://bitbucket.org/dhellmann/virtualenvwrapper)
+- [pyenv](https://github.com/yyuu/pyenv-installer)
 
 installed on your operating system.
 
