@@ -40,6 +40,7 @@ alias assh="ssh -i ~/.aws/rdegges.pem ubuntu@"
 
 # Python helpers.
 alias pt="python setup.py test"
+alias pyc="rm *.pyc"
 
 # Node helpers.
 alias nt="npm test"
