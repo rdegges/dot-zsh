@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (Plugins can be found in
 # ~/.oh-my-zsh/plugins/.) Custom plugins may be added to
 # ~/.oh-my-zsh/custom/plugins/
-plugins=(command-not-found git git-flow)
+plugins=(command-not-found git git-flow heroku jsontools)
 
 # Active oh-my-zsh.
 source $ZSH/oh-my-zsh.sh
@@ -71,11 +71,27 @@ unsetopt correct_all
 [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
 
 # Enable NVM.
-export NVM_DIR="/Users/rdegges/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-# Enable pyenv.
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# This will look for a local `.nvmrc` file in each directory, and will
+# automatically switch to using that version of node if requested.
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 
-# Enable virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/).
-pyenv virtualenvwrapper
+# Enable pyenv.
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# GPG Agent
+export GPGKEY=8F700DA2
