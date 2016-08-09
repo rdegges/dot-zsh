@@ -26,7 +26,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dstufft"
+ZSH_THEME="terminalparty"
 
 # Set to use case-sensitive completion.
 CASE_SENSITIVE="false"
@@ -95,3 +95,20 @@ eval "$(pyenv virtualenv-init -)"
 
 # GPG Agent
 export GPGKEY=8F700DA2
+
+OS="`uname`"
+case $OS in
+  # On OSX we need to properly initialize GPG Agent so it works correctly.  This
+  # isn't necessary on *nix because we're using GPG2 there (newer) which doesn't
+  # require this bootstrapping.
+  'Darwin')
+    if [ -f "${HOME}/.gpg-agent-info" ]; then
+      . "${HOME}/.gpg-agent-info"
+      export GPG_AGENT_INFO
+      export SSH_AUTH_SOCK
+    fi
+
+    export GPG_TTY=$(tty)
+    ;;
+  *) ;;
+esac
