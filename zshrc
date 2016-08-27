@@ -14,8 +14,8 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 
 ##### PATHS
-# Enable RVM (https://rvm.io/).
-PATH=$PATH:$HOME/.rvm/bin
+# Enable rbenv (https://github.com/rbenv/rbenv).
+export PATH=$HOME/.rbenv/bin:$PATH
 
 
 ##### OH-MY-ZSH
@@ -67,8 +67,8 @@ unsetopt correct_all
 # Enable autoenv (https://github.com/kennethreitz/autoenv).
 [[ -s "/usr/local/opt/autoenv/activate.sh" ]] && source "/usr/local/opt/autoenv/activate.sh"
 
-# Enable RVM.
-[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
+# Enable rbenv.
+eval "$(rbenv init -)"
 
 # Enable NVM.
 export NVM_DIR="$HOME/.nvm"
