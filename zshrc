@@ -96,3 +96,6 @@ eval "$(pyenv virtualenv-init -)"
 # GPG Agent
 export GPG_TTY=$(tty)
 export GPGKEY=8F700DA2
+
+# Use most for paging because it makes things look prettier.
+export PAGER=most
