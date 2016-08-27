@@ -14,11 +14,12 @@ The below commands will download the project, and setup ZSH.
 
 - `zsh`
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [rvm](http://rvm.io/)
+- [rbenv](https://github.com/rbenv/rbenv)
 - [nvm](https://github.com/creationix/nvm)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - [autoenv](https://github.com/kennethreitz/autoenv)
 - [pyenv](https://github.com/yyuu/pyenv-installer)
+- [most](http://www.jedsoft.org/most/)
 
 installed on your operating system.
 
