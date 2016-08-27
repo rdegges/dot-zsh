@@ -94,4 +94,5 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # GPG Agent
+export GPG_TTY=$(tty)
 export GPGKEY=8F700DA2
