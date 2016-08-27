@@ -99,3 +99,6 @@ export GPGKEY=8F700DA2
 
 # Use most for paging because it makes things look prettier.
 export PAGER=most
+
+# Support Travis CI gem.
+[ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
