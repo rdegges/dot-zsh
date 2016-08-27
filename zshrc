@@ -105,3 +105,18 @@ export PAGER=most
 
 # Support Heroku toolbelt.
 export PATH="/usr/local/heroku/bin:$PATH"
+
+OS="`uname`"
+case $OS in
+  # On OSX we need to properly initialize GPG Agent so it works correctly.  This
+  # isn't necessary on *nix because we're using GPG2 there (newer) which doesn't
+  # require this bootstrapping.
+  'Darwin')
+    if [ -f "${HOME}/.gpg-agent-info" ]; then
+      . "${HOME}/.gpg-agent-info"
+      export GPG_AGENT_INFO
+      export SSH_AUTH_SOCK
+    fi
+    ;;
+  *) ;;
+esac
