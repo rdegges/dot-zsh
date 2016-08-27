@@ -102,3 +102,6 @@ export PAGER=most
 
 # Support Travis CI gem.
 [ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
+
+# Support Heroku toolbelt.
+export PATH="/usr/local/heroku/bin:$PATH"
