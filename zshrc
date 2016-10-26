@@ -120,3 +120,6 @@ case $OS in
     ;;
   *) ;;
 esac
+
+# WOrk with composer
+export PATH="$HOME/.composer/vendor/bin:$PATH"
