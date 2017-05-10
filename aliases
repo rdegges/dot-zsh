@@ -44,3 +44,6 @@ alias pyc="rm *.pyc"
 
 # Node helpers.
 alias nt="npm test"
+
+# TODO
+alias t="todo-txt"
