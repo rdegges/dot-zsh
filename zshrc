@@ -121,5 +121,8 @@ case $OS in
   *) ;;
 esac
 
-# WOrk with composer
+# Work with composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Hub
+eval "$(hub alias -s)"
