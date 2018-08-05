@@ -3,9 +3,6 @@ alias psg="ps aux | grep"
 alias ka9="killall -9"
 alias k9="kill -9"
 
-# Moving around.
-alias ..="cd .."
-
 # Show human friendly numbers and colors.
 alias df="df -h"
 alias ll="ls -alGh --color=auto"
@@ -26,7 +23,6 @@ alias zr="source ~/.zshrc"
 
 # Common shell functions.
 alias tf="tail -f"
-alias l='less'
 alias lh="ls -alt | head"
 alias tmux="TERM=xterm-256color tmux"
 alias cl="clear"
