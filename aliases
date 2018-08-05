@@ -5,8 +5,8 @@ alias k9="kill -9"
 
 # Show human friendly numbers and colors.
 alias df="df -h"
-alias ll="ls -alGh --color=auto"
-alias ls="ls -Gh --color=auto"
+alias l="ls -ah"
+alias ll="ls -alh"
 alias du="du -sh"
 alias df="df -h"
 
@@ -15,10 +15,10 @@ alias lsg="ll | grep"
 
 # Vim stuff.
 alias ve="vim ~/.vimrc"
-alias v="vim"
+alias v="nvim"
 
 # Quick ZSH editing.
-alias ze="vim ~/.zshrc"
+alias ze="v ~/.zshrc"
 alias zr="source ~/.zshrc"
 
 # Common shell functions.
