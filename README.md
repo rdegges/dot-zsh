@@ -17,7 +17,7 @@ The below commands will download the project, and setup ZSH.
 - [rbenv](https://github.com/rbenv/rbenv)
 - [nvm](https://github.com/creationix/nvm)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
-- [autoenv](https://github.com/kennethreitz/autoenv)
+- [direnv](https://direnv.net/)
 - [pyenv](https://github.com/yyuu/pyenv-installer)
 - [most](http://www.jedsoft.org/most/)
 
