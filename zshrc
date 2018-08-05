@@ -54,14 +54,10 @@ export PAGER=most
 export GPG_TTY=$(tty)
 
 
-##### ALIASES
-source ~/.zsh/global_aliases
-source ~/.zsh/aliases
-
-
 ##### CLEAN UP
 antigen apply
 
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+##### ALIASES
+source ~/.zsh/global_aliases
+source ~/.zsh/aliases
