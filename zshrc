@@ -1,128 +1,67 @@
+##### ANTIGEN
+source ~/.zsh/antigen.zsh
+antigen use oh-my-zsh
+
+
+##### PLUGIN SETTINGS
+# zsh-autosuggestions
+ZSH_AUTOSUGGEST_USE_ASYNC=true
+
+# zsh-nvm
+NVM_LAZY_LOAD=true
+
+# oh-my-zsh
+DISABLE_AUTO_TITLE="true"
+
+
+##### OH-MY-ZSH PLUGINS
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle common-aliases
+antigen bundle jsontools
+antigen bundle last-working-dir
+antigen bundle urlencode
+antigen bundle vi-mode
+antigen bundle web-search
+
+
+##### THIRD-PARTY PLUGINS
+antigen bundle djui/alias-tips
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle unixorn/autoupdate-antigen.zshplugin
+antigen bundle arzzen/calc.plugin.zsh
+antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle oldratlee/hacker-quotes
+antigen bundle lukechilds/zsh-nvm
+antigen bundle caarlos0/zsh-open-pr
+antigen bundle erikced/zsh-pyenv-lazy-load
+antigen bundle zsh-users/zsh-completions
+antigen bundle ELLIOTTCABLE/rbenv.plugin.zsh
+antigen bundle joshuarubin/zsh-direnv
+
+
+##### KEY BINDINGS
+bindkey '^ ' autosuggest-accept
+
+
+##### UI
+antigen theme robbyrussell
+
+
+##### EXPORTS
+export EDITOR=nvim
+export PAGER=most
+export GPG_TTY=$(tty)
+
+
 ##### ALIASES
 source ~/.zsh/global_aliases
 source ~/.zsh/aliases
 
 
-##### EXPORTS
-# Use vim as the default text editor.
-export EDITOR=vim
-
-# Enable Go (http://golang.org/).
-export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin
+##### CLEAN UP
+antigen apply
 
 
-##### PATHS
-# Enable rbenv (https://github.com/rbenv/rbenv).
-export PATH=$HOME/.rbenv/bin:$PATH
-
-
-##### OH-MY-ZSH
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="half-life"
-
-# Set to use case-sensitive completion.
-CASE_SENSITIVE="false"
-
-# Set to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="false"
-
-# Set how often you would like to wait before auto-updates occur (in days).
-export UPDATE_ZSH_DAYS=7
-
-# Set to disable colors in ls.
-DISABLE_LS_COLORS="false"
-
-# Set to disable autosetting terminal title.
-DISABLE_AUTO_TITLE="true"
-
-# Set if you want red dots to be displayed while waiting for completion.
-COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (Plugins can be found in
-# ~/.oh-my-zsh/plugins/.) Custom plugins may be added to
-# ~/.oh-my-zsh/custom/plugins/
-plugins=(command-not-found git git-flow heroku jsontools)
-
-# Active oh-my-zsh.
-source $ZSH/oh-my-zsh.sh
-
-
-##### BEHAVIOR
-# Use bash style incremental search.
-bindkey "^R" history-incremental-search-backward
-
-# Don't use auto correct stuff. I find that annoying.
-unsetopt correct_all
-
-
-##### TOOLS
-# Enable autoenv (https://github.com/kennethreitz/autoenv).
-[[ -s "/usr/local/opt/autoenv/activate.sh" ]] && source "/usr/local/opt/autoenv/activate.sh"
-
-# Enable rbenv.
-eval "$(rbenv init -)"
-
-# Enable NVM.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-# This will look for a local `.nvmrc` file in each directory, and will
-# automatically switch to using that version of node if requested.
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-
-# Enable pyenv.
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# GPG Agent
-export GPG_TTY=$(tty)
-export GPGKEY=8F700DA2
-
-# Use most for paging because it makes things look prettier.
-export PAGER=most
-
-# Support Travis CI gem.
-[ -f "$HOME/.travis/travis.sh" ] && source "$HOME/.travis/travis.sh"
-
-# Support Heroku toolbelt.
-export PATH="/usr/local/heroku/bin:$PATH"
-
-OS="`uname`"
-case $OS in
-  # On OSX we need to properly initialize GPG Agent so it works correctly.  This
-  # isn't necessary on *nix because we're using GPG2 there (newer) which doesn't
-  # require this bootstrapping.
-  'Darwin')
-    if [ -f "${HOME}/.gpg-agent-info" ]; then
-      . "${HOME}/.gpg-agent-info"
-      export GPG_AGENT_INFO
-      export SSH_AUTH_SOCK
-    fi
-    ;;
-  *) ;;
-esac
-
-# Work with composer
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
-# Hub
-eval "$(hub alias -s)"
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
