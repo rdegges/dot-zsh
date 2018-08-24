@@ -27,6 +27,7 @@ alias lh="ls -alt | head"
 alias tmux="TERM=xterm-256color tmux"
 alias cl="clear"
 alias ps="ps aux"
+alias rm="rm"
 
 # Quick file zipping.
 alias gz="tar -zcvf"
