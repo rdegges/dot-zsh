@@ -52,6 +52,8 @@ antigen theme robbyrussell
 export EDITOR=nvim
 export PAGER=most
 export GPG_TTY=$(tty)
+export GOPATH=$HOME/Code/Go
+export PATH=$PATH:$GOPATH/bin
 
 
 ##### CLEAN UP
