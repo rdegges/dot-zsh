@@ -41,3 +41,9 @@ alias pyc="rm *.pyc"
 
 # Node helpers.
 alias nt="npm test"
+
+# Download helpers.
+alias dl="youtube-dl --restrict-filenames --no-overwrites --write-description --write-info-json -f bestvideo+bestaudio"
+
+# GitHub helpers.
+alias git=hub
