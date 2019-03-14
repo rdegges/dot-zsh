@@ -33,7 +33,6 @@ npm install -g diff-so-fancy
 rbenv install 2.5.1
 rbenv global 2.5.1
 
-curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
-PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.0
-pyenv global 3.7.0
-```
+curl https://pyenv.run | bash
+PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.2
+pyenv global 3.7.2
