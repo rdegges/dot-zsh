@@ -1,5 +1,5 @@
 ##### ANTIGEN
-source ~/.zsh/antigen.zsh
+source ~/Drive/Sync/Dotfiles/zsh/antigen.zsh
 antigen use oh-my-zsh
 
 
@@ -61,5 +61,5 @@ antigen apply
 
 
 ##### ALIASES
-source ~/.zsh/global_aliases
-source ~/.zsh/aliases
+source ~/Drive/Sync/Dotfiles/zsh/global_aliases
+source ~/Drive/Sync/Dotfiles/zsh/aliases
