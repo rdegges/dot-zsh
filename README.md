@@ -29,11 +29,11 @@ ln -s ~/Drive/Sync/Dotfiles/zsh/zshrc ~/.zshrc
 chsh -s /usr/bin/zsh
 zsh # enter into shell
 
-nvm install v10.9.0
+nvm install v13.12.0
 
-rbenv install 2.5.1
-rbenv global 2.5.1
+rbenv install 2.7.1
+rbenv global 2.7.1
 
 curl https://pyenv.run | bash
-PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.7.2
-pyenv global 3.7.2
+PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.2
+pyenv global 3.8.2
