@@ -35,5 +35,5 @@ rbenv install 2.7.1
 rbenv global 2.7.1
 
 curl https://pyenv.run | bash
-PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.2
+PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.8.3
 pyenv global 3.8.2
