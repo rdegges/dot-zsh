@@ -28,8 +28,6 @@ antigen bundle web-search
 ##### THIRD-PARTY PLUGINS
 antigen bundle djui/alias-tips
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle unixorn/autoupdate-antigen.zshplugin
-antigen bundle arzzen/calc.plugin.zsh
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle oldratlee/hacker-quotes
 antigen bundle lukechilds/zsh-nvm
