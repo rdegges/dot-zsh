@@ -28,6 +28,7 @@ alias tmux="TERM=xterm-256color tmux"
 alias cl="clear"
 alias ps="ps aux"
 alias rm="rm"
+alias cat="bat"
 
 # Quick file zipping.
 alias gz="tar -zcvf"
